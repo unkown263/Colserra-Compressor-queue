@@ -44,23 +44,3 @@ async def help(event):
     await event.reply(
         "**🥇 Fastest Encoding Bot Used By @Animes_Encoded**\n\n+This Bot Encodes Videos With Negligible Quality Change.\n+Generate Sample Compressed Video To check Quality\n+Easy to Use\n+This Bot is fast as fek and it gives files encoded in 480p.\nSo Its not for public use! Nd join @Anime_Encoded.\nDont Spam Bot.\n\nEnjoy!",
     )
-
-
-async def ihelp(event):
-    await event.edit(
-        "**🥇 Fastest Encoding Bot Used By @Animes_Encoded**\n\n+This Bot Encodes Videos With Negligible Quality Change.\n+Generate Sample Compressed Video To check Quality\n+Easy to Use\n+This Bot is fast as fek and it gives files encoded in 480p.\nSo Its not for public use! Nd join @Anime_Encoded.\nDont Spam Bot.\n\nEnjoy!"
-        buttons=[Button.inline("BACK", data="beck")],
-    )
-
-
-async def beck(event):
-    await event.edit(
-        f"Hi `{event.sender.first_name}`\n**🥇 Fastest Encoding Bot Used By @Animes_Encoded**\n\n+This Bot Encodes Videos With Negligible Quality Change.\n+Generate Sample Compressed Video To check Quality\n+Easy to Use\n+This Bot is fast as fek and it gives files encoded in 480p.\nSo Its not for public use! Nd join @Anime_Encoded.\nDont Spam Bot.\n\nEnjoy!"
-        buttons=[
-            [Button.inline("HELP", data="ihelp")],
-            [
-                Button.url("CHANNEL", url="t.me/animes_encoded"),
-                Button.url("BOSS", url="t.me/Bro_isDarkal"),
-            ],
-        ],
-    )
