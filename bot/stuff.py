@@ -43,7 +43,6 @@ async def start(event):
 async def help(event):
     await event.reply(
         "**🥇 Fastest Encoding Bot Used By @Animes_Encoded**\n\n+This Bot Encodes Videos With Negligible Quality Change.\n+Generate Sample Compressed Video To check Quality\n+Easy to Use\n+This Bot is fast as fek and it gives files encoded in 480p.\nSo Its not for public use! Nd join @Anime_Encoded.\nDont Spam Bot.\n\nEnjoy!",
-        
     )
 
 
