@@ -29,7 +29,9 @@ async def stats(e):
         await e.answer(ans, cache_time=0, alert=True)
     except Exception as er:
         LOGS.info(er)
-        await e.answer("Someting Went Wrong 🤔\nMaybe Bot was restarted", cache_time=0, alert=True)
+        await e.answer(
+            "Someting Went Wrong 🤔\nMaybe Bot was restarted", cache_time=0, alert=True
+        )
 
 
 async def encod(event):
@@ -65,7 +67,9 @@ async def encod(event):
             if not name:
                 name = "video_" + dt.now().isoformat("_", "seconds") + ".mp4"
             QUEUE.update({doc.id: [name, doc]})
-            return await xxx.edit("Added to Queue ⏰, Please Wait , Compress will start soon")
+            return await xxx.edit(
+                "Added to Queue ⏰, Please Wait , Compress will start soon"
+            )
         WORKING.append(1)
         xxx = await event.reply("📥.Downloading.📥")
         s = dt.now()
