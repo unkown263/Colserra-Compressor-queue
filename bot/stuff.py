@@ -29,18 +29,12 @@ async def up(event):
 
 async def start(event):
     await event.reply(
-        f"Hi `{event.sender.first_name}`\nThis is A CompressorQueue Which Can Encode Videos.\nReduce Size of Videos With Negligible Quality Change\nU can Generate Samples/screenshots too.",
+        f"Hi `{event.sender.first_name}`\nThis is A Bot  Which Can Encode Videos.\nReduce Size of Videos in 480p\nU can Generate Samples/screenshots too.",
         buttons=[
-            [Button.inline("HELP", data="ihelp")],
+            [Button.url("GROUP", url="t.me/anime_hub_group")],
             [
                 Button.url("CHANNEL", url="t.me/animes_encoded"),
                 Button.url("BOSS", url="t.me/Bro_isDarkal"),
             ],
         ],
-    )
-
-
-async def help(event):
-    await event.reply(
-        "**🥇 Fastest Encoding Bot Used By @Animes_Encoded**\n\n+This Bot Encodes Videos With Negligible Quality Change.\n+Generate Sample Compressed Video To check Quality\n+Easy to Use\n+This Bot is fast as fek and it gives files encoded in 480p.\nSo Its not for public use! Nd join @Anime_Encoded.\nDont Spam Bot.\n\nEnjoy!",
     )
