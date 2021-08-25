@@ -185,6 +185,7 @@ async def something():
                     link_preview=False,
                 )
                 QUEUE.pop(list(QUEUE.keys())[0])
+                WORKING.clear()
                 os.remove(dl)
                 os.remove(out)
             else:
