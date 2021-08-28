@@ -1,6 +1,6 @@
-## Queue Compressor Bot (For Single Users)
+## Simple Bot with queue work 
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue&template=https%3A%2F%2Fgithub.com%2F1Danish-00%2FCompressorQueue)
+[![Channel](https://t.me/Animes_Encoded)
 
 ### Variables
 `APP_ID` `API_HASH` `BOT_TOKEN`
@@ -9,6 +9,4 @@
 
 `THUMBNAIL` : Put telegraph link of a picture for use of Thumbnail.
 
-`FFMPEG` : Put Your FFMPEG Code with "{}" as input and output. (Eg. `ffmpeg -i "{}" -preset veryfast -vcodec libx265 -crf 27 "{}"`)
-
-- [Main Source](https://github.com/1Danish-00/CompressorBot)
+`FFMPEG` : Put your best ffmpeg code , U can ask code at t.me/Anime_Hub_Group
