@@ -1,6 +1,6 @@
 ## Simple Bot with queue work 
 
-[![Channel](https://t.me/Animes_Encoded)
+[![Developer](https://t.me/R3verse_bot)
 
 ### Variables
 `APP_ID` `API_HASH` `BOT_TOKEN`
@@ -9,4 +9,4 @@
 
 `THUMBNAIL` : Put telegraph link of a picture for use of Thumbnail.
 
-`FFMPEG` : Put your best ffmpeg code , U can ask code at t.me/Anime_Hub_Group
+`FFMPEG` : Put your best ffmpeg code.
