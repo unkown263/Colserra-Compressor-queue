@@ -101,7 +101,7 @@ async def something():
         try:
             if not WORKING and QUEUE:
                 user = int(OWNER.split()[0])
-                e = await bot.send_message(user, "📥Downloding Queue Files📥")
+                e = await bot.send_message(user, "Downlodin' Queue Files")
                 dl, file = QUEUE[list(QUEUE.keys())[0]]
                 s = dt.now()
                 tt = time.time()
@@ -117,7 +117,7 @@ async def something():
                                 t,
                                 e,
                                 tt,
-                                "📥Downloading📥",
+                                "Downloadin'",
                             )
                         ),
                     )
@@ -125,7 +125,7 @@ async def something():
                 kk = dl.split("/")[-1]
                 aa = kk.split(".")[-1]
                 rr = "encode"
-                bb = kk.replace(f".{aa}", " [Encoded].mkv")
+                bb = kk.replace(f".{aa}", " Encoded.mkv")
                 out = f"{rr}/{bb}"
                 thum = "thumb.jpg"
                 dtime = ts(int((es - s).seconds) * 1000)
@@ -156,14 +156,14 @@ async def something():
                 ees = dt.now()
                 ttt = time.time()
                 await nn.delete()
-                nnn = await e.client.send_message(e.chat_id, "📤.UPLOAING.📤")
+                nnn = await e.client.send_message(e.chat_id, "Uploadin'")
                 with open(out, "rb") as f:
                     ok = await upload_file(
                         client=e.client,
                         file=f,
                         name=out,
                         progress_callback=lambda d, t: asyncio.get_event_loop().create_task(
-                            progress(d, t, nnn, ttt, "📤.UPLAODING.📤")
+                            progress(d, t, nnn, ttt, "Uploadin'")
                         ),
                     )
                 ds = await e.client.send_file(
@@ -181,7 +181,7 @@ async def something():
                 a1 = await info(dl, e)
                 a2 = await info(out, e)
                 dk = await ds.reply(
-                    f"Original File Size : {hbs(org)}\nEncoded File Size : {hbs(com)}\nEncoded File Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nCompressed in {xx}\nUploaded in {xxx}",
+                    f"Original File Size : {hbs(org)}\nEncoded Size : {hbs(com)}\nEncoded Percentage : {per}\n\nMediainfo: [Before]({a1})//[After]({a2})\n\nDownloaded in {x}\nEncoded in {xx}\nUploaded in {xxx}",
                     link_preview=False,
                 )
                 QUEUE.pop(list(QUEUE.keys())[0])
